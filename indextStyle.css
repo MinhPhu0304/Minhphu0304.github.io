@@ -1,0 +1,63 @@
+/* CSS files add styling rules to your content */
+html {
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+body {
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  overflow:auto;
+  font-family: 'Lato',sans-serif !important;
+  color: white;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+.section-header {
+  font-style: bold;
+  color: blue;
+  
+}
+
+footer {
+   display:block; 
+   color: black;
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+#ar-js-logo {
+  width:30%;
+  height: 30%;
+  animation: App-logo-spin infinite 10s linear;  
+}
+
+.figure-caption {
+  color: grey;
+}

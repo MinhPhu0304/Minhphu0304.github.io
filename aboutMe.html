@@ -1,0 +1,146 @@
+<!doctype HTML>
+<html>
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="aboutme.css" type="text/css" rel="stylesheet">
+    
+    <title>Guides AR for Education</title>
+  </head>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="menuBar">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+                <a class="navbar-brand" href="/">
+                <img class="img-responsive" src="https://cdn.glitch.com/4ff9a500-ca58-4e50-a917-73cf8924b5cc%2FarJSLogo.png?1539815520312" id="ar-js-logo">   
+                  AR for Educations      
+                </a>    
+        </div>
+        <div class="col">
+            <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>            
+      </div>
+      </div>        
+    </div>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home <span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="guide.html">Guides</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://ar-in-education.glitch.me/newFeature.html">See AR in action</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">About me</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  </header>
+  <main>
+    <div class="container-fluid" id="page-content">
+      <div class="text-center bg" id="intro">
+        Who am I?
+        <br>
+        <h4 >I am a genius, billionaire, playboy, philanthropist</h4>
+        <p>Note: all the above were wrong. That's Tony Stark</p>
+      </div>
+      <div class="text-center" id="ava-div">
+        <img class="img-fluid mr-auto rounded-circle" src="https://cdn.glitch.com/4ff9a500-ca58-4e50-a917-73cf8924b5cc%2FDSC_1728.JPG?1539848886358" alt="avata" id="ava"> 
+        <p>That's me</p>
+      </div>
+      <div class="container-fluid text-left" id="navbar-content"> 
+        <!--Tab bar-->
+        <ul class="nav nav-tabs sticky-top bg-primary">
+            <li class="active">
+                <a class="nav-link active anchor" data-toggle="tab" role="button" data-target=".bio">Bio</a>
+            </li>
+            <li >
+                <a class="nav-link anchor" data-toggle="tab" role="button" data-target=".timeline">Timeline</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link anchor" data-toggle="tab" role="button" data-target=".skills">Skills</a>
+            </li>
+          </ul>
+        
+          <!--Tab content            -->
+          <div class="tab-content">
+            <div id="bio" class="tab-pane show fade in bio active">
+              <h6>Q:Who is the man behind this website?</h6>
+              <p class="text-justify">
+                Well, the man behind ar js is Minh Phu Lai. A computer science student at AUT.
+              </p>
+            </div>
+            <div id="timeline" class="tab-pane fade in timeline">
+<!--https://webdesign.tutsplus.com/tutorials/building-a-vertical-timeline-with-css-and-a-touch-of-javascript--cms-26528-->
+                 <section class="timeline">
+                    <ul>
+                      <li>
+                        <div>
+                          <time>60 Million years ago</time>
+                          Dinosaurs were still roaring the earth. Then some meteor hit the Earth "gently". And then booomm, bye dinosaur.
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <time>1999</time> 
+                          A smart kid was born and ready to rock'n roll. His name is Minh Phu Lai. Although he is not good at music but he loves classic rock.
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <time>2015</time>
+                          Selected as one of the team member for high school basketball. He was so exited about it. He had been played basketball for over a year at that time.
+                        </div>
+                      </li>
+                      
+                      <!-- more list items here -->
+                    </ul>
+                  </section>
+            </div>
+            <div id="skills" class="tab-pane fade in skills">
+              <!--Use google api for chart                -->
+              <img class="img-fluid" src="http://www.clker.com/cliparts/i/w/L/q/u/1/work-in-progress-hi.png">
+                
+            </div>
+          </div>
+      </div>
+    </div>
+
+    
+    
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </main>
+<footer>
+  <div class="card" id="footer-content">
+      <h5 class="card-header"></h5>
+      <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text">
+          <p>  Made by Minh Phu Lai. Special thanks to <a href="https://github.com/jeromeetienne">Jeromee</a> for publishing his amazing library.
+                Also, special thanks to 
+                <a href="https://poly.google.com/user/4aEd8rQgKu2">  Poly Google </a>, 
+                <a href="https://poly.google.com/user/fa4m5c69h51">Robert Mirabelle</a>,
+                <a  href="https://sketchfab.com">Sketchfab</a>            
+                for outstanding 3D model for my demonstration.<br>
+               Contact infomation:
+              </p>  
+            <li>Gmail: <a href="mailto:lminhphu0304@gmail.com"> lminhphu0304@gmail.com</a></li>
+            <li>Github profile: <a href="https://github.com/minhphu0304">minhphu0304</a></li>
+          
+          </p>
+          <a href="https://github.com/minhphu0304" class="btn btn-primary">Go to my other awesome pet projects</a>
+      </div>
+  </div>
+</footer>
+</html>

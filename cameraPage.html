@@ -1,0 +1,30 @@
+<!doctype HTML>
+<html>
+<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"> </script>
+<!-- <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script> -->
+  <body style="margin : 0px; overflow: hidden;">
+    <a-scene embedded arjs=" detectionMode: mono ;debugUIEnabled: false; sourceType: webcam ;trackingMethod: best"  vr-mode-ui="enabled: false">
+            <!-- This page shoule only used for testing purpose only   	         -->
+            <!--Hiro marker is detected              -->
+            <a-marker preset="hiro" id="hiroMarkerDetected">
+            <!--Using URL inline-->           
+                <a-entity scale="0.2 0.2 0.2">
+                <a-gltf-model src="coffee-cup-model/Coffee Cup_final.gltf">
+                    <a-animation attribute="rotation" to="0 360 0" dur="3000" easing="linear" repeat="indefinite"></a-animation>
+                </a-gltf-model>
+                </a-entity> 
+            </a-marker>
+            <!-- Kanji marker detected-->
+            <a-marker preset="kanji">
+              <a-entity scale="0.2 0.2 0.2">
+                <a-gltf-model src="earth-model/earth_ball.gltf" scale="0.1 0.1 0.1">
+                  <a-animation attribute="rotation" to="0 360 0" dur="3000" easing="linear" repeat="indefinte"></a-animation>
+                </a-gltf-model>
+              </a-entity>
+            </a-marker>
+  	  <a-entity camera></a-entity>
+<!--       <a-marker-camera></a-marker-camera> -->
+    </a-scene>
+  </body>
+</html>
