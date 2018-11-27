@@ -1,0 +1,87 @@
+<!doctype HTML>
+<html>
+  <!--Import for aframe to do 3D render  -->
+  <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+
+  <!--Aframe xtra to handle animation    -->
+  <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v4.2.0/dist/aframe-extras.min.js"></script>
+  
+  <!--Import for ar js script to detect marker -->
+  <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"> </script>
+
+  <!--Import hammer js for interactive model      -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+  
+  <!--Additional script-->
+  <script src="newFeature.js"></script> 
+  
+  <body style="margin : 0px; overflow: hidden;">   
+   <a-scene embedded 
+            stats 
+            arjs="sourceType: webcam ;
+                  debugUIEnabled: false;
+                  patternRatio: 0.9; 
+                  trackingMethod: best;"
+            vr-mode-ui="enabled: false">
+      
+            <!--Customize marker using coffee cup image with ratio of 0.9-->
+           <a-marker type="pattern" 
+                     gesture 
+                     url="coffeePattern.patt" 
+                     id= "coffeeCupModel">
+                  <a-entity scale="0.2 0.2 0.2">
+                    <a-gltf-model src="coffee-cup-model/Coffee Cup_final.gltf"></a-gltf-model>
+                  </a-entity> 
+            </a-marker>
+             
+            <!--Customize marker using space shuttle model. Don't need animation since user can interact with it -->
+           <a-marker gesture 
+                     id= "spaceShuttleModel" 
+                     type="pattern"  
+                     url="https://cdn.glitch.com/4ff9a500-ca58-4e50-a917-73cf8924b5cc%2Fspaceshuttle.patt?1541474162389">
+             <a-entity scale="0.1 0.1 0.1"  rotation="270 0 0" >
+                <a-gltf-model src="spaceShuttle/SpaceShuttle(1).gltf">
+             </a-gltf-model>
+                </a-entity>    
+           </a-marker>
+           
+           <!-- Earth model marker-->
+           <a-marker gesture
+                     id="globeModel"
+                     type="pattern"
+                     url="https://cdn.glitch.com/4ff9a500-ca58-4e50-a917-73cf8924b5cc%2FglobeMarker.patt?1542318312649">
+                 <a-entity scale="0.1 0.1 0.1">
+                      <a-gltf-model src="earth-model/earth_ball.gltf" scale="0.1 0.1 0.1"></a-gltf-model>
+                 </a-entity> 
+            </a-marker>
+     
+           <!--alien marker with animation-->
+           <a-marker gesture
+                     id="alien"
+                     type="pattern"
+                     url ="https://cdn.glitch.com/4ff9a500-ca58-4e50-a917-73cf8924b5cc%2Falien_pattern.patt?1542682386404">
+             <a-entity>
+               <a-gltf-model src="https://raw.githubusercontent.com/MinhPhu0304/3D-Model-For-AR-website/master/walking_alien/scene.gltf"
+                             scale="0.01 0.01 0.01"
+                             animation-mixer>
+               </a-gltf-model>
+             </a-entity>
+           </a-marker>
+     
+          <!--Medieval village marker with animiation-->
+           <a-marker gesture
+                     id="medievale-village"
+                     type="pattern"
+                     url ="https://cdn.glitch.com/4ff9a500-ca58-4e50-a917-73cf8924b5cc%2Fmedieval-marker.patt?1542687119528">
+             <a-entity>
+               <a-gltf-model src="https://raw.githubusercontent.com/MinhPhu0304/3D-Model-For-AR-website/master/Medieval_fantasy_book/scene.gltf"
+                             scale="0.01 0.01 0.01"
+                             animation-mixer>
+               </a-gltf-model>
+             </a-entity>
+           </a-marker>
+<!--   	  <a-entity camera></a-entity>  -->
+      <a-marker-camera></a-marker-camera>
+    </a-scene> 
+  </body>
+</html>

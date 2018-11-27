@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">    
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
+   
+    <!--Import hammer js for interactive model      -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    
+    <!--Additional script to register gesture component      -->
+    <script src="arGesture.js"></script>
+    
+    <!--Necessary styling for sliders div to appear on top of ar js      -->
+    <link rel="stylesheet" type="text/css" href="ar-gesture.css">
+  </head>  
+  <body>
+    <a-scene embedded arjs="trackingMethod: best; debugUIEnabled: false;">
+      <a-marker preset="hiro" gesture class="marker">
+          <a-entity scale="0.2 0.2 0.2">
+                  <a-gltf-model src="earth-model/earth_ball.gltf" scale="0.1 0.1 0.1"></a-gltf-model>
+          </a-entity>
+      </a-marker>
+      <a-marker preset="kanji" gesture class="marker">
+          <a-entity scale="0.2 0.2 0.2">
+                  <a-gltf-model src="spaceShuttle/SpaceShuttle(1).gltf" scale="0.1 0.1 0.1"></a-gltf-model>
+          </a-entity>
+      </a-marker>
+      <a-entity camera ></a-entity>
+      <div id="zoom-slider"></div>  
+    </a-scene>
+    <script src="destopGesture.js"></script>
+  </body>
+</html>
