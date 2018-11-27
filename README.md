@@ -1,2 +1,3 @@
-# Minhphu0304.github.io
-AR website
+# Website used for AR
+
+This website is built when I had a play with AR.js 
