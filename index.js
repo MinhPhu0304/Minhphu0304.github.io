@@ -4,10 +4,10 @@ const reasonUseAR = "For the longest time as I remembered, most of the school wo
 ".";
 const ARAdditionalUsage = "You might be wondering what else can AR do for education. Turn out there are plethora "+
 "usage of AR in other subject such as Astrophysics, history, etc";      
-;
+
 
 function Paragraph (props){
-  return <p>{props.content}</p>
+  return <p className="text-justify">{props.content}</p>
 }
 
 function Image(props){

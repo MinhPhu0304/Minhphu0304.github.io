@@ -8,11 +8,15 @@ The app couldn't be built without the help of Glitch for development. Find out m
 
 Augrumented Reality in Education
 ------------
+# Overview":
+    * The website used Bootstrap to build mobile first website.
+    * The website alone already inlcude user guide for end user
+    * There might be some performance issue since the library it used still under development
+
 
 # Note:
   * The website app is still in development process so it will have some weird or bad code in there. Feel free to contact me for any issue 
 
-In the mean time. If you would like to know what I have done so far, you can visit my [github profile](https://github.com/MinhPhu0304)
 
 
 
