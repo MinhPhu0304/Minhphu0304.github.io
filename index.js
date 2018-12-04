@@ -4,10 +4,10 @@ const reasonUseAR = "For the longest time as I remembered, most of the school wo
 ".";
 const ARAdditionalUsage = "You might be wondering what else can AR do for education. Turn out there are plethora "+
 "usage of AR in other subject such as Astrophysics, history, etc";      
-
+;
 
 function Paragraph (props){
-  return <p className="text-justify">{props.content}</p>
+  return <p>{props.content}</p>
 }
 
 function Image(props){
@@ -26,7 +26,7 @@ function DisplayContent(){
       <div className="container-fluid">
         <h2 className="section-header">III.Reason using AR in classroom </h2>
         <Paragraph content={reasonUseAR}/>
-        <Image url="https://cdn.apk-cloud.com/detail/screenshot/PJbzsiWjca_IMy-zhozr0Ha0xUMWH4fRvdnpWQZTJ37asKBnyVucxjLa1OrKUlNZhA=h900.png" caption="I wish we had this earlier" />
+        <Image url="./Assets/AR-Chemistry-studying.jpg" caption="I wish we had this earlier" />
         
       </div>
   );
