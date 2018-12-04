@@ -12,7 +12,7 @@
   <!--Import hammer js for interactive model      -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
   
-  <!--Additional script-->
+  <!--Additional script for manipulating 3D model-->
   <script src="newFeature.js"></script> 
   
   <body style="margin : 0px; overflow: hidden;">   
@@ -30,7 +30,8 @@
                      url="coffeePattern.patt" 
                      id= "coffeeCupModel">
                   <a-entity scale="0.2 0.2 0.2">
-                    <a-gltf-model src="coffee-cup-model/Coffee Cup_final.gltf"></a-gltf-model>
+                    <a-gltf-model src="coffee-cup-model/Coffee Cup_final.gltf">
+                    </a-gltf-model>
                   </a-entity> 
             </a-marker>
              
@@ -39,7 +40,8 @@
                      id= "spaceShuttleModel" 
                      type="pattern"  
                      url="https://cdn.glitch.com/4ff9a500-ca58-4e50-a917-73cf8924b5cc%2Fspaceshuttle.patt?1541474162389">
-             <a-entity scale="0.1 0.1 0.1"  rotation="270 0 0" >
+             <a-entity scale="0.1 0.1 0.1"  
+                       rotation="270 0 0" >
                 <a-gltf-model src="spaceShuttle/SpaceShuttle(1).gltf">
              </a-gltf-model>
                 </a-entity>    
@@ -80,7 +82,6 @@
                </a-gltf-model>
              </a-entity>
            </a-marker>
-<!--   	  <a-entity camera></a-entity>  -->
       <a-marker-camera></a-marker-camera>
     </a-scene> 
   </body>
