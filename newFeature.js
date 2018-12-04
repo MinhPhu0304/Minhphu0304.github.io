@@ -1,26 +1,3 @@
-	AFRAME.registerComponent('showid', {
-		init: function () {
-			var marker = this.el;
-			marker.addEventListener('markerFound', function() {
-				var markerId = marker.id;
-			var rotation = marker.getAttribute('rotation');
-			var debugValue = JSON.stringify(rotation);
-			// console.log("Marker ID is "+markerId);
-				alert("The rotation of registered component is " + debugValue);
-				// TODO: Add your own code here to react to the marker being found.
-			});
-      // marker.addEventListener('click',function(evt){
-      //   alert("You clicked the model");                       
-      // });
-      
-			// marker.addEventListener('markerLost', function() {
-			// 	var markerId = marker.id;
-			// 	console.log('markerLost', markerId);
-			// 	// TODO: Add your own code here to react to the marker being lost.
-			// });
-		}
-	});
-
 ///////////////////////////////////////////////////
 //    code seperator
 ///////////////////////////////////////////////////
