@@ -4,11 +4,15 @@ const reasonUseAR = "For the longest time as I remembered, most of the school wo
 ".";
 const ARAdditionalUsage = "You might be wondering what else can AR do for education. Turn out there are plethora "+
 "usage of AR in other subject such as Astrophysics, history, etc";      
-;
+
 
 function Paragraph (props){
   return <p>{props.content}</p>
 }
+
+//The main reason making Image function instead of using figure is to avoid React confusion between
+// standard HTML tag and custom React component also making a Image component you can reuse image with captiion 
+//easier
 
 function Image(props){
   return  (

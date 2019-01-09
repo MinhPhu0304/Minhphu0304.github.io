@@ -3,7 +3,7 @@
                                   // this variable only useful if user uses desktop
 const defaultScale = {x: 0.1, y: 0.1, z: 0.1};    
 
-
+//todo: change this if condition more readable
 if( !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )) {
   let pageContent = document.getElementById('zoom-slider');
 
