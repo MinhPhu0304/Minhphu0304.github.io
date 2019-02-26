@@ -8,6 +8,8 @@
 
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
+  <!-- Chart.js is easy to use comparing to using Google chart  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
   <link href="aboutme.css" type="text/css" rel="stylesheet">
 
   <title>Guides AR for Education</title>
@@ -78,46 +80,77 @@
 
       <!--Tab content            -->
       <div class="tab-content">
-        <div id="bio" class="tab-pane show fade in bio active">
-          <h6>Q:Who is the man behind this website?</h6>
+        <div id="bio" class="tab-pane show fade in bio active text-justify">
+          <script>
+             var id = document.getElementById('bio');
+            console.log(id);
+             id.scrollTop = 0;
+          </script>
+                   
+          <h6 id="who">Q: &nbsp Who is the man behind this website?</h6>
           <p class="text-justify">
-            Well, the man behind ar js is Minh Phu Lai. A computer science student at AUT.
+            A: &nbsp Well, the man behind ar js is Minh Phu Lai. A computer science student at AUT.
+          </p>
+          <h6 id="why">Q: &nbsp Why is he doing this website?</h6>
+          <p class="text-justify">
+            A: &nbsp It started as a pet project when my lecturer told me to build some website that enable AR. Then I "just do it". Of course along the way I have to search for a lot of problems. Overall this project taught me how to design a nicely looking website for mobile and the fun behind it
           </p>
         </div>
         <div id="timeline" class="tab-pane fade in timeline">
-          <!--https://webdesign.tutsplus.com/tutorials/building-a-vertical-timeline-with-css-and-a-touch-of-javascript--cms-26528-->
-          <section class="timeline">
-            <ul>
-              <li>
-                <div>
-                  <time>60 Million years ago</time>
-                  Dinosaurs were still roaring the earth. Then some meteor hit the Earth "gently". And then booomm, bye
-                  dinosaur.
-                </div>
-              </li>
-              <li>
-                <div>
-                  <time>1999</time>
-                  A smart kid was born and ready to rock'n roll. His name is Minh Phu Lai. Although he is not good at
-                  music but he loves classic rock.
-                </div>
-              </li>
-              <li>
-                <div>
-                  <time>2015</time>
-                  Selected as one of the team member for high school basketball. He was so exited about it. He had been
-                  played basketball for over a year at that time.
-                </div>
-              </li>
-
-              <!-- more list items here -->
-            </ul>
-          </section>
+          <script>
+            var id = document.getElementById('timeline');
+            console.log(id);
+             id.scrollTop = 0;
+          </script>
+          <div class="container-fluid">             
+            <!--https://webdesign.tutsplus.com/tutorials/building-a-vertical-timeline-with-css-and-a-touch-of-javascript--cms-26528-->
+             <section class="timeline">
+                <ul>
+                  <li>
+                    <div>
+                      <time>60 Million years ago</time>
+                      Dinosaurs were still roaring the earth. Then some meteor hit the Earth "gently". And then booomm, bye dinosaur.
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <time>1999</time> 
+                      A smart kid was born and ready to rock'n roll. His name is Minh Phu Lai. Although he is not good at singing but he loves classic rock.
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <time>2015</time>
+                      Selected as one of the team member for high school basketball. It was fun for me
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <time>2016</time>
+                      Starting to study abroad in NZ at Avondale College. Got involved in Micrsoft Specialist contest
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <time>2017 </time>
+                      Selected as one of 52 prefects of year 13. Prefects are role model of the school.
+                    </div>
+                  </li>
+                  
+                  <!-- more list items here -->
+                </ul>
+              </section>
+            </div>
         </div>
         <div id="skills" class="tab-pane fade in skills">
-          <!--Use google api for chart                -->
-          <img class="img-fluid" src="http://www.clker.com/cliparts/i/w/L/q/u/1/work-in-progress-hi.png">
-
+          <script>
+             var id = document.getElementById('skills');
+            console.log(id);
+             id.scrollTop = 0;
+          </script>
+          <!--Use chart.js api for chart                -->
+          <canvas id="chart"></canvas>
+          <script src="./aboutMe.js"></script>  
         </div>
       </div>
     </div>
