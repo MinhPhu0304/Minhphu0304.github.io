@@ -49,10 +49,6 @@ body {
 .bg { 
     /* The image used */
     background-image: url("https://cdn.glitch.com/4ff9a500-ca58-4e50-a917-73cf8924b5cc%2FIMG-20170916-WA0000.jpg?1542773169119");
-
-    
-   /* Full height */
-/*     height: 100%;  */
     min-height: 800px;
 
     /* Center and scale the image nicely */
@@ -61,6 +57,13 @@ body {
     background-size: cover;
 }
 
+a {
+  top: -400px;
+}
+
+/****************************************  
+*  Making timeline
+*****************************************/
 .timeline ul li {
   list-style-type: none ;
   position: relative ;
@@ -154,10 +157,7 @@ time {
 
 @media screen and (max-width: 600px) {
   .timeline ul li {
-    margin-left: 0px;
-  }
-  .timeline ul li div {
-    width: calc(100vw - 91px);
+    margin-left: -20px;
   }
   .timeline ul li:nth-child(even) div {
     left: 45px;
